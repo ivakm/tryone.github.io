@@ -1,0 +1,479 @@
+@import url(reset.css);
+* {
+  box-sizing: border-box; }
+
+.clean {
+  clear: both; }
+
+header {
+  width: 100%;
+  height: 240px;
+  background: url(../image/back.jpg);
+  background-size: cover; }
+  header .container {
+    display: block;
+    height: 100%; }
+    header .container .logo {
+      width: 318px;
+      height: 105px;
+      background: url(../image/Logo6.png) no-repeat;
+      background-size: cover;
+      display: block;
+      transform: translateY(50%);
+      float: left; }
+      header .container .logo a {
+        display: block;
+        height: 100%; }
+  header .user {
+    float: right;
+    padding: 48px 0 0 0; }
+    header .user .header_buttons {
+      float: right;
+      margin-bottom: 10px; }
+    header .user nav {
+      float: right;
+      border-radius: 10px; }
+      header .user nav form button, header .user nav form input {
+        border-radius: 10px; }
+  header .brand-menu {
+    padding-top: 29px;
+    background: transparent; }
+    header .brand-menu ul {
+      display: flex;
+      justify-content: center; }
+      header .brand-menu ul li {
+        position: relative; }
+        header .brand-menu ul li h1 {
+          color: white;
+          text-align: center;
+          line-height: 2;
+          font-size: 20px;
+          text-transform: uppercase; }
+        header .brand-menu ul li a {
+          display: block;
+          line-height: 2;
+          text-align: center; }
+        header .brand-menu ul li div, header .brand-menu ul li .brand-menu-1h, header .brand-menu ul li .brand-menu-2h,
+        header .brand-menu ul li .brand-menu-3h, header .brand-menu ul li .brand-menu-4h, header .brand-menu ul li .brand-menu-5h,
+        header .brand-menu ul li .brand-menu-6h, header .brand-menu ul li .brand-menu-7h, header .brand-menu ul li .brand-menu-8h, header .brand-menu ul li .brand-menu-9h {
+          display: none;
+          flex-direction: column;
+          background: #e70e88; }
+          header .brand-menu ul li div ul, header .brand-menu ul li .brand-menu-1h ul, header .brand-menu ul li .brand-menu-2h ul,
+          header .brand-menu ul li .brand-menu-3h ul, header .brand-menu ul li .brand-menu-4h ul, header .brand-menu ul li .brand-menu-5h ul,
+          header .brand-menu ul li .brand-menu-6h ul, header .brand-menu ul li .brand-menu-7h ul, header .brand-menu ul li .brand-menu-8h ul, header .brand-menu ul li .brand-menu-9h ul {
+            display: flex;
+            flex-direction: column; }
+            header .brand-menu ul li div ul li a, header .brand-menu ul li .brand-menu-1h ul li a, header .brand-menu ul li .brand-menu-2h ul li a,
+            header .brand-menu ul li .brand-menu-3h ul li a, header .brand-menu ul li .brand-menu-4h ul li a, header .brand-menu ul li .brand-menu-5h ul li a,
+            header .brand-menu ul li .brand-menu-6h ul li a, header .brand-menu ul li .brand-menu-7h ul li a, header .brand-menu ul li .brand-menu-8h ul li a, header .brand-menu ul li .brand-menu-9h ul li a {
+              background: transparent;
+              color: white;
+              display: block;
+              position: relative;
+              text-align: left;
+              padding-left: 30px; }
+              header .brand-menu ul li div ul li a:before, header .brand-menu ul li .brand-menu-1h ul li a:before, header .brand-menu ul li .brand-menu-2h ul li a:before,
+              header .brand-menu ul li .brand-menu-3h ul li a:before, header .brand-menu ul li .brand-menu-4h ul li a:before, header .brand-menu ul li .brand-menu-5h ul li a:before,
+              header .brand-menu ul li .brand-menu-6h ul li a:before, header .brand-menu ul li .brand-menu-7h ul li a:before, header .brand-menu ul li .brand-menu-8h ul li a:before, header .brand-menu ul li .brand-menu-9h ul li a:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(to bottom, #e70e88, #b32727); }
+              header .brand-menu ul li div ul li a:after, header .brand-menu ul li .brand-menu-1h ul li a:after, header .brand-menu ul li .brand-menu-2h ul li a:after,
+              header .brand-menu ul li .brand-menu-3h ul li a:after, header .brand-menu ul li .brand-menu-4h ul li a:after, header .brand-menu ul li .brand-menu-5h ul li a:after,
+              header .brand-menu ul li .brand-menu-6h ul li a:after, header .brand-menu ul li .brand-menu-7h ul li a:after, header .brand-menu ul li .brand-menu-8h ul li a:after, header .brand-menu ul li .brand-menu-9h ul li a:after {
+                content: '';
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                width: 5px;
+                height: 5px;
+                border: 1px solid white;
+                border-radius: 50%;
+                background: white; }
+              header .brand-menu ul li div ul li a:hover, header .brand-menu ul li .brand-menu-1h ul li a:hover, header .brand-menu ul li .brand-menu-2h ul li a:hover,
+              header .brand-menu ul li .brand-menu-3h ul li a:hover, header .brand-menu ul li .brand-menu-4h ul li a:hover, header .brand-menu ul li .brand-menu-5h ul li a:hover,
+              header .brand-menu ul li .brand-menu-6h ul li a:hover, header .brand-menu ul li .brand-menu-7h ul li a:hover, header .brand-menu ul li .brand-menu-8h ul li a:hover, header .brand-menu ul li .brand-menu-9h ul li a:hover {
+                text-decoration: none;
+                background: #c3267e;
+                position: relative; }
+                header .brand-menu ul li div ul li a:hover:after, header .brand-menu ul li .brand-menu-1h ul li a:hover:after, header .brand-menu ul li .brand-menu-2h ul li a:hover:after,
+                header .brand-menu ul li .brand-menu-3h ul li a:hover:after, header .brand-menu ul li .brand-menu-4h ul li a:hover:after, header .brand-menu ul li .brand-menu-5h ul li a:hover:after,
+                header .brand-menu ul li .brand-menu-6h ul li a:hover:after, header .brand-menu ul li .brand-menu-7h ul li a:hover:after, header .brand-menu ul li .brand-menu-8h ul li a:hover:after, header .brand-menu ul li .brand-menu-9h ul li a:hover:after {
+                  content: '';
+                  position: absolute;
+                  border: 5px solid transparent;
+                  border-left: 5px solid white;
+                  background: transparent;
+                  top: calc(50% - 4px); }
+        header .brand-menu ul li .brand-menu-2h {
+          background: #f24e1d; }
+          header .brand-menu ul li .brand-menu-2h ul li a {
+            position: relative; }
+            header .brand-menu ul li .brand-menu-2h ul li a:hover {
+              background: #ec6941; }
+            header .brand-menu ul li .brand-menu-2h ul li a:before {
+              position: absolute;
+              content: '';
+              background: linear-gradient(to bottom, #f24e1d, #e60e87); }
+        header .brand-menu ul li .brand-menu-3h {
+          background: #002957; }
+          header .brand-menu ul li .brand-menu-3h ul li a {
+            position: relative; }
+            header .brand-menu ul li .brand-menu-3h ul li a:hover {
+              background: #0f4d92; }
+            header .brand-menu ul li .brand-menu-3h ul li a:before {
+              position: absolute;
+              content: '';
+              background: linear-gradient(to bottom, #1616ce, #091861); }
+        header .brand-menu ul li .brand-menu-4h {
+          background: #cd101d; }
+          header .brand-menu ul li .brand-menu-4h ul li a:hover {
+            background: #bb111d; }
+        header .brand-menu ul li .brand-menu-5h {
+          background: #23211d; }
+          header .brand-menu ul li .brand-menu-5h ul li a {
+            position: relative; }
+            header .brand-menu ul li .brand-menu-5h ul li a:hover {
+              background-color: #3e3d3b; }
+            header .brand-menu ul li .brand-menu-5h ul li a:before {
+              position: absolute;
+              content: '';
+              background: linear-gradient(to bottom, #1f1a1d, #544848); }
+        header .brand-menu ul li .brand-menu-6h {
+          background: #8624bf; }
+          header .brand-menu ul li .brand-menu-6h ul li a {
+            position: relative; }
+            header .brand-menu ul li .brand-menu-6h ul li a:hover {
+              background: #a724f3; }
+            header .brand-menu ul li .brand-menu-6h ul li a:before {
+              position: absolute;
+              content: '';
+              background: linear-gradient(to bottom, #6f2c96, #781fad); }
+        header .brand-menu ul li .brand-menu-7h {
+          background: #984b31; }
+          header .brand-menu ul li .brand-menu-7h ul li a {
+            position: relative; }
+            header .brand-menu ul li .brand-menu-7h ul li a:hover {
+              background: #b3583a; }
+            header .brand-menu ul li .brand-menu-7h ul li a:before {
+              content: '';
+              position: absolute;
+              background: linear-gradient(to bottom, #8a422a, #e67a55); }
+        header .brand-menu ul li .brand-menu-8h {
+          background: #3a9733; }
+          header .brand-menu ul li .brand-menu-8h ul li a {
+            position: relative; }
+            header .brand-menu ul li .brand-menu-8h ul li a:hover {
+              background: #3ac130; }
+            header .brand-menu ul li .brand-menu-8h ul li a:before {
+              content: '';
+              position: absolute;
+              background: linear-gradient(to bottom, #2e8e27, #58e64d); }
+        header .brand-menu ul li .brand-menu-9h {
+          background: #7dd0d7; }
+          header .brand-menu ul li .brand-menu-9h ul li a {
+            position: relative; }
+            header .brand-menu ul li .brand-menu-9h ul li a:hover {
+              background: #73e3ec; }
+            header .brand-menu ul li .brand-menu-9h ul li a:before {
+              position: absolute;
+              content: '';
+              background: linear-gradient(to bottom, #42b0b9, #64cbd4); }
+      header .brand-menu ul .brand-menu-1 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m01.png) no-repeat; }
+        header .brand-menu ul .brand-menu-1 > a:hover {
+          background: url(../image/data/top/m01h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-2 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m02.png) no-repeat; }
+        header .brand-menu ul .brand-menu-2 > a:hover {
+          background: url(../image/data/top/m02h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-3 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m03.png) no-repeat; }
+        header .brand-menu ul .brand-menu-3 > a:hover {
+          background: url(../image/data/top/m03h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-4 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m04.png) no-repeat; }
+        header .brand-menu ul .brand-menu-4 > a:hover {
+          background: url(../image/data/top/m04h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-5 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m05.png) no-repeat; }
+        header .brand-menu ul .brand-menu-5 > a:hover {
+          background: url(../image/data/top/m05h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-6 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m06.png) no-repeat; }
+        header .brand-menu ul .brand-menu-6 > a:hover {
+          background: url(../image/data/top/m06h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-7 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m07.png) no-repeat; }
+        header .brand-menu ul .brand-menu-7 > a:hover {
+          background: url(../image/data/top/m07h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-8 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m08.png) no-repeat; }
+        header .brand-menu ul .brand-menu-8 > a:hover {
+          background: url(../image/data/top/m08h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-9 > a {
+        display: block;
+        width: 108px;
+        height: 61px;
+        background: url(../image/data/top/m09.png) no-repeat; }
+        header .brand-menu ul .brand-menu-9 > a:hover {
+          background: url(../image/data/top/m09h.png) no-repeat; }
+      header .brand-menu ul .brand-menu-1, header .brand-menu ul .brand-menu-2, header .brand-menu ul .brand-menu-3, header .brand-menu ul .brand-menu-4, header .brand-menu ul .brand-menu-5,
+      header .brand-menu ul .brand-menu-6, header .brand-menu ul .brand-menu-7, header .brand-menu ul .brand-menu-8, header .brand-menu ul .brand-menu-9 {
+        position: relative; }
+      header .brand-menu ul .brand-menu-1:hover .brand-menu-1h, header .brand-menu ul .brand-menu-2:hover .brand-menu-2h, header .brand-menu ul .brand-menu-3:hover .brand-menu-3h,
+      header .brand-menu ul .brand-menu-4:hover .brand-menu-4h, header .brand-menu ul .brand-menu-5:hover .brand-menu-5h, header .brand-menu ul .brand-menu-6:hover .brand-menu-6h,
+      header .brand-menu ul .brand-menu-7:hover .brand-menu-7h, header .brand-menu ul .brand-menu-8:hover .brand-menu-8h, header .brand-menu ul .brand-menu-9:hover .brand-menu-9h {
+        display: flex;
+        position: absolute;
+        content: "";
+        top: 61px;
+        left: 0;
+        z-index: 10;
+        width: 300%; }
+      header .brand-menu ul .brand-menu-8:hover .brand-menu-8h {
+        left: -100%; }
+      header .brand-menu ul .brand-menu-9:hover .brand-menu-9h {
+        left: -200%; }
+
+#content {
+  background: #4242a5; }
+  #content .container {
+    padding: 0;
+    background: white; }
+    #content .container .slaider .mySlides a {
+      display: block; }
+    #content .container .otherInfo {
+      margin: 0; }
+      #content .container .otherInfo .otherInfo-left {
+        padding: 0;
+        display: flex;
+        justify-content: center; }
+        #content .container .otherInfo .otherInfo-left a {
+          display: block; }
+      #content .container .otherInfo .otherInfo-right {
+        padding: 0; }
+        #content .container .otherInfo .otherInfo-right h1 {
+          font-size: 20px;
+          color: white;
+          font-weight: 600;
+          text-decoration: none;
+          padding-left: 10px;
+          text-transform: uppercase;
+          display: block;
+          background: linear-gradient(to bottom, #9c3999, violet);
+          line-height: 2;
+          margin-bottom: 10px; }
+        #content .container .otherInfo .otherInfo-right #carousel .row, #content .container .otherInfo .otherInfo-right .fade-carousel {
+          margin: 0;
+          text-align: center;
+          display: flex;
+          font-size: 20px;
+          color: white;
+          justify-content: center;
+          align-items: center;
+          height: 250px; }
+          #content .container .otherInfo .otherInfo-right #carousel .row .fade-item, #content .container .otherInfo .otherInfo-right .fade-carousel .fade-item {
+            width: 270px;
+            padding: 0;
+            margin: 0;
+            display: block;
+            height: 200px; }
+            #content .container .otherInfo .otherInfo-right #carousel .row .fade-item .item-inner, #content .container .otherInfo .otherInfo-right .fade-carousel .fade-item .item-inner {
+              height: 200px;
+              display: block; }
+              #content .container .otherInfo .otherInfo-right #carousel .row .fade-item .item-inner img, #content .container .otherInfo .otherInfo-right .fade-carousel .fade-item .item-inner img {
+                display: block;
+                height: 100%;
+                width: 270px; }
+  #content .slideshowContainer {
+    position: relative; }
+    #content .slideshowContainer .right-menu {
+      position: absolute;
+      width: 42px;
+      content: '';
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      right: -42px; }
+      #content .slideshowContainer .right-menu ul {
+        width: 100%;
+        height: 100%; }
+        #content .slideshowContainer .right-menu ul li {
+          position: relative;
+          display: block;
+          height: 63px; }
+          #content .slideshowContainer .right-menu ul li a {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 40px;
+            z-index: 10;
+            height: 100%;
+            top: 0;
+            left: 0; }
+            #content .slideshowContainer .right-menu ul li a:hover {
+              z-index: 20; }
+          #content .slideshowContainer .right-menu ul li:nth-child(1) a {
+            background: url(../image/data/right/r_menu_1.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(1) a:hover {
+              background: url(../image/data/right/r_menu_1h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(2) a {
+            top: -10px;
+            background: url(../image/data/right/r_menu_2.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(2) a:hover {
+              background: url(../image/data/right/r_menu_2h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(3) a {
+            top: -20px;
+            background: url(../image/data/right/r_menu_3.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(3) a:hover {
+              background: url(../image/data/right/r_menu_3h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(4) a {
+            top: -30px;
+            background: url(../image/data/right/r_menu_4.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(4) a:hover {
+              background: url(../image/data/right/r_menu_4h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(5) a {
+            top: -40px;
+            background: url(../image/data/right/r_menu_5.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(5) a:hover {
+              background: url(../image/data/right/r_menu_5h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(6) a {
+            top: -50px;
+            background: url(../image/data/right/r_menu_6.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(6) a:hover {
+              background: url(../image/data/right/r_menu_6h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(7) a {
+            top: -60px;
+            background: url(../image/data/right/r_menu_7.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(7) a:hover {
+              background: url(../image/data/right/r_menu_7h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(8) a {
+            top: -70px;
+            background: url(../image/data/right/r_menu_8.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(8) a:hover {
+              background: url(../image/data/right/r_menu_8h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(9) a {
+            top: -80px;
+            background: url(../image/data/right/r_menu_9.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(9) a:hover {
+              background: url(../image/data/right/r_menu_9h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(10) a {
+            top: -90px;
+            height: 62px;
+            background: url(../image/data/right/r_menu_10.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(10) a:hover {
+              background: url(../image/data/right/r_menu_10h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(11) a {
+            top: -100px;
+            background: url(../image/data/right/r_menu_11.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(11) a:hover {
+              background: url(../image/data/right/r_menu_11h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(12) a {
+            top: -110px;
+            background: url(../image/data/right/r_menu_12.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(12) a:hover {
+              background: url(../image/data/right/r_menu_12h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(13) a {
+            top: -120px;
+            background: url(../image/data/right/r_menu_13.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(13) a:hover {
+              background: url(../image/data/right/r_menu_13h.png); }
+          #content .slideshowContainer .right-menu ul li:nth-child(14) a {
+            top: -130px;
+            background: url(../image/data/right/r_menu_14.png); }
+            #content .slideshowContainer .right-menu ul li:nth-child(14) a:hover {
+              background: url(../image/data/right/r_menu_14h.png); }
+    #content .slideshowContainer .left-menu {
+      position: absolute;
+      content: '';
+      display: flex;
+      top: 0;
+      left: -46px;
+      width: 46px;
+      flex-direction: column; }
+      #content .slideshowContainer .left-menu ul {
+        width: 100%;
+        height: 100%; }
+        #content .slideshowContainer .left-menu ul li {
+          position: relative;
+          height: 121px;
+          display: block; }
+          #content .slideshowContainer .left-menu ul li a {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            z-index: 10;
+            height: 100%;
+            top: 0;
+            left: 0; }
+            #content .slideshowContainer .left-menu ul li a:hover {
+              z-index: 20; }
+          #content .slideshowContainer .left-menu ul li:nth-child(1) a {
+            background: url(../image/data/left/l_menu_1.png); }
+            #content .slideshowContainer .left-menu ul li:nth-child(1) a:hover {
+              background: url(../image/data/left/l_menu_1h.png); }
+          #content .slideshowContainer .left-menu ul li:nth-child(2) a {
+            top: -20px;
+            height: 164px;
+            background: url(../image/data/left/l_menu_2.png); }
+            #content .slideshowContainer .left-menu ul li:nth-child(2) a:hover {
+              background: url(../image/data/left/l_menu_2h.png); }
+          #content .slideshowContainer .left-menu ul li:nth-child(3) a {
+            height: 164px;
+            background: url(../image/data/left/l_menu_4.png); }
+            #content .slideshowContainer .left-menu ul li:nth-child(3) a:hover {
+              background: url(../image/data/left/l_menu_4h.png); }
+
+footer {
+  height: 80px;
+  background: #4242a5; }
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; }
+    footer .container span {
+      color: white;
+      font-size: 20px;
+      position: relative; }
+      footer .container span:before {
+        position: absolute;
+        content: '';
+        right: -10px;
+        top: -17px;
+        width: 3px;
+        height: 55px;
+        background: linear-gradient(to bottom, transparent 10%, white 55%, transparent); }
+
+/*# sourceMappingURL=main.css.map */
