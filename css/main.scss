@@ -8,47 +8,118 @@
   clear: both;
 }
 
+body {
+  background: url(../image/back.jpg);
+}
+
 header {
   width: 100%;
   height: 240px;
-  background: url(../image/back.jpg);
   background-size: cover;
   .container {
     display: block;
     height: 100%;
-    .logo {
-      width: 375px;
-      height: 129px;
-      background: url(../image/Logo6.png) no-repeat;
-      background-size: cover;
-      display: block;
-      transform: translateY(34%);
-      float: left;
-      a {
+    .first-row {
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        width: 600px;
+        height: 129px;
+        background: url(../image/Logo6.png) no-repeat;
+        background-size: cover;
         display: block;
-        height: 100%;
+        float: left;
+        a {
+          display: block;
+          height: 100%;
+        }
+      }
+      .first-row-nonlogo {
+        margin: 36px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        .user {
+          .navbar {
+            margin: 0;
+            border-radius: 10px;
+            form {
+              button, input {
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+        .phone {
+          display: flex;
+          flex-direction: row;
+          .btn-group {
+            margin-right: 10px;
+            #btnGroupDrop1 {
+              background: #5bc0de;
+              border-radius: 13px;
+              > a {
+                border: none;
+              }
+            }
+          }
+          .phone-number {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            a {
+              color: white;
+              font-weight: bold;
+              font-size: 20px;
+              margin-bottom: 5px;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            span {
+              color: antiquewhite;
+              font-size: 14px;
+            }
+          }
+        }
+        .cart-plus {
+          position: absolute;
+          content: '';
+          top: -35px;
+          right: -70px;
+          padding: 10px;
+          height: 58px;
+          button {
+            background: #5bc0de;
+            height: 100%;
+            width: 50px;
+            border-radius: 10px;
+            outline: none;
+          }
+        }
       }
     }
-  }
-  .user {
-    float: right;
-    padding: 48px 0 0 0;
-    .header_buttons {
-      float: right;
+    .second-row {
+      height: 40px;
       margin-bottom: 10px;
-    }
-    nav {
-      float: right;
-      border-radius: 10px;
-      form {
-        button, input {
-          border-radius: 10px;
+      > nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        a {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          height: 100%;
         }
       }
     }
   }
   .brand-menu {
-    padding-top: 29px;
     background: transparent;
     ul {
       display: flex;
@@ -386,7 +457,6 @@ header {
 }
 
 #content {
-  background: url(../image/back.jpg);
   .container {
     padding: 0;
     background: white;
@@ -672,7 +742,6 @@ header {
 
 footer {
   height: 80px;
-  background: url(../image/back.jpg);
   .container {
     display: flex;
     align-items: center;
@@ -682,7 +751,7 @@ footer {
       color: white;
       font-size: 20px;
       position: relative;
-      &:before{
+      &:before {
         position: absolute;
         content: '';
         right: -10px;
