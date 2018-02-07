@@ -17,12 +17,12 @@ header {
     display: block;
     height: 100%;
     .logo {
-      width: 318px;
-      height: 105px;
+      width: 375px;
+      height: 129px;
       background: url(../image/Logo6.png) no-repeat;
       background-size: cover;
       display: block;
-      transform: translateY(50%);
+      transform: translateY(34%);
       float: left;
       a {
         display: block;
@@ -386,7 +386,7 @@ header {
 }
 
 #content {
-  background: #24247a;
+  background: url(../image/back.jpg);
   .container {
     padding: 0;
     background: white;
@@ -672,7 +672,7 @@ header {
 
 footer {
   height: 80px;
-  background: #24247a;
+  background: url(../image/back.jpg);
   .container {
     display: flex;
     align-items: center;
