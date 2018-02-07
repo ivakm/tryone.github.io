@@ -10,6 +10,7 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css  ">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css">
@@ -22,6 +23,7 @@
         .slick-slide img {
             width: 100%;
         }
+
         .slick-prev:before,
         .slick-next:before {
             color: black;
@@ -44,38 +46,56 @@
 <body>
 <header>
     <div class="container">
-        <div class="logo">
-            <a href="#"></a>
-        </div>
-        <div class="user">
-            <div class="header_buttons">
-                <button type="button" class="btn btn-light">Избранное (0)</button>
-                <button type="button" class="btn btn-light">Войти</button>
+        <div class="first-row">
+            <div class="logo">
+                <a href="#"></a>
             </div>
-            <br>
-            <nav class="navbar navbar-expand-lg navbar-primary bg-light">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+            <div class="first-row-nonlogo">
+                <div class="user">
+                    <nav class="navbar navbar-expand-lg navbar-primary bg-light">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                       aria-label="Search">
+                                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
                 </div>
+                <div class="phone">
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" class="btn btn-info btn-lg">
+                                <span class="glyphicon glyphicon-phone-alt"></span> Phone
+                            </a></button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">telephone #1</a>
+                            <a class="dropdown-item" href="#">telephone #2</a>
+                        </div>
+                    </div>
+                    <div class="phone-number">
+                        <a href="#">+38(096)XXX-XX-XX</a>
+                        <span>Пн-Пт: 9.00 - 18.00</span>
+                    </div>
+                </div>
+                <div class="cart-plus">
+                    <button>
+                        <i class="fa fa-cart-plus fa-3" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <nav class="nav nav-pills nav-fill bg-light">
+                <a class="nav-item nav-link active" href="#">Active</a>
+                <a class="nav-item nav-link" href="#">Link</a>
+                <a class="nav-item nav-link" href="#">Link</a>
+                <a class="nav-item nav-link " href="#">Link</a>
+                <a class="nav-item nav-link " href="#">Link</a>
+                <a class="nav-item nav-link " href="#">Link</a>
+                <a class="nav-item nav-link " href="#">Link</a>
             </nav>
-
         </div>
         <div class="clean"></div>
         <div class="brand-menu">
@@ -375,7 +395,7 @@
                         <div class="modal-body">
                             <form action="send.php" method="post">
                                 <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label">Как к вам обращаться?</label>
+                                    <label for="recipient-name" class="col-form-label">Как к Вам обращаться?</label>
                                     <input type="text" class="form-control" id="recipient-name" name="fio"
                                            placeholder="Укажите ФИО" required>
                                 </div>
@@ -397,6 +417,8 @@
         </div>
     </div>
 </footer><!--FOOTER-->
+
+
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
         crossorigin="anonymous"></script>
